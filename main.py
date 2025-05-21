@@ -10,7 +10,7 @@ class VectorData(BaseModel):
     embeddings: List[List[float]]
     metadatas: List[Dict[str, Any]]
 
-@app.post("/store-vectors")
+@app.post("/save-vectors")
 def store_vectors(data: VectorData):
     try:
         save_vectors_to_chroma(data.ids, data.embeddings, data.metadatas)
