@@ -3,3 +3,5 @@ uvicorn==0.22.0
 chromadb==0.4.22
 langchain==0.0.220
 langchain-core
+sentence-transformers==2.2.2
+huggingface_hub==0.15.1
